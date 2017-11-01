@@ -3,7 +3,7 @@
 
 <center>
 <h3 style="padding: 10px;">Event Registration:</h3>
-<div class="jumbotron col-6">
+<div class="jumbotron col-6" style=" font-weight: bold;">
 <form  action='submit.php' method='post'>
   <div class="form-group row">
     <label for="name" class="col-3">Name:</label>
