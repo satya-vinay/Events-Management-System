@@ -1,5 +1,4 @@
 <?php
-//fetch.php
 $connect = mysqli_connect("localhost", "root", "", "project");
 $output = '';
 if(isset($_POST["query"]))
@@ -58,7 +57,7 @@ if($result->num_rows > 0)
 }
 else
 {
- echo 'Data Not Found';
+ echo '<h3 style="padding:30px;">Data Not Found</h3>';
 }
 
 ?>

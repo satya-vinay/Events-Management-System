@@ -7,7 +7,7 @@
    
    <div class="col-lg-12">
     <div class="input-group">
-      <input type="text" class="form-control" name='search_text' id='search_text' placeholder="Search for..." aria-label="Search for...">
+      <input type="text" class="form-control" name='search_text' id='search_text' placeholder="Enter a Event to Search. . . . . . ." aria-label="Enter a event to search">
       <span class="input-group-btn">
         <button class="btn btn-secondary" type="button">Go!</button>
       </span>
@@ -18,9 +18,7 @@
    <div id="result"></div>
   </div>
   </center>
- </body>
-</html>
-
+ 
 
 <script>
 $(document).ready(function(){
@@ -52,3 +50,6 @@ $(document).ready(function(){
  });
 });
 </script>
+
+</body>
+</html>

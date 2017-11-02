@@ -26,6 +26,35 @@ function fetch_data()
 <?php include('header.php'); ?>
 
 <center>
+<h3 style="padding: 20px;">Records In Database:</h3>
+<div class="table-responsive table-hover table-bordered col-10" >
+
+     <table class="table" >
+  <thead > 
+    <tr class="table-primary">
+                <th width="1%">Id</th>
+              
+                <th width="1%">Name</th>
+                <th width="1%">Event</th>
+                <th width="1%">Email</th>
+                <th width="1%">Year</th>
+                <th width="1%">Gender</th>
+                <th width="1%">From date</th>
+                <th width="1%">To date</th>
+                <th width="1%">No of people</th>
+            </tr>
+
+
+    <tbody>
+            <?php
+            echo fetch_data();
+            ?>
+        </tbody>
+    </table>
+        </thead>
+        </table>
+    </div>
+    </div>
 <h3 style="padding: 20px;">Edit Registration:</h3>
 
 <div class="jumbotron col-6" style=" font-weight: bold;">
@@ -85,45 +114,8 @@ function fetch_data()
 </form>
 </div>
 </div>
-<h3 style="padding: 20px;">Records In Database:</h3>
-<div class="table-responsive table-hover table-bordered col-10" >
 
-     <table class="table" >
-  <thead > 
-    <tr class="table-primary">
-                <th width="1%">Id</th>
-              
-                <th width="1%">Name</th>
-                <th width="1%">Event</th>
-                <th width="1%">Email</th>
-                <th width="1%">Year</th>
-                <th width="1%">Gender</th>
-                <th width="1%">From date</th>
-                <th width="1%">To date</th>
-                <th width="1%">No of people</th>
-            </tr>
-
-
-    <tbody>
-            <?php
-            echo fetch_data();
-            ?>
-        </tbody>
-    </table>
-        </thead>
-        </table>
-    </div>
-    </div>
 </center>
 
+<?php include('footer.php'); ?>
 
-<script>
-        function myfunction(){
-            alert("Data Updated And Submitted Succesfully");
-        }
-    </script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-</body>
-</html>
