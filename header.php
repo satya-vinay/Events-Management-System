@@ -25,13 +25,13 @@
       </li>
 
        <li class="nav-item active">
-        <a class="nav-link" href="#">Edit <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="edit.php">Edit <span class="sr-only">(current)</span></a>
       </li>
        <li class="nav-item active">
-        <a class="nav-link" href="#">Delete <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="delete.php">Delete <span class="sr-only">(current)</span></a>
       </li>
        <li class="nav-item active">
-        <a class="nav-link" href="#">Search <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="search.php">Search <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="report.php">Report <span class="sr-only">(current)</span></a>

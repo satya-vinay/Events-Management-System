@@ -16,8 +16,8 @@
  
   </div>
   <div class="form-group row">
-    <label for="title" class="col-3">Program:</label>
-    <input type="text" class="form-control col-8" id="title" name="title" placeholder="Enter Program" required>
+    <label for="title" class="col-3">Event:</label>
+    <input type="text" class="form-control col-8" id="title" name="title" placeholder="Enter event" required>
    
   </div>
 <div class="form-group row">
@@ -70,7 +70,7 @@ This type of legal agreement can be used for both your website and your mobile a
  
 
 
-  <button class="btn btn-primary" type="submit"  value='submit' autofocus>Submit</button>
+  <button class="btn btn-primary" type="submit"  value='submit' >Submit</button>
 </form>
 </div>
 </div>
