@@ -36,7 +36,7 @@ function fetch_data()
     </div>
   </div>
   </form>
-
+<h3 style="padding: 20px;">Records In Database:</h3>
   <div class="table-responsive table-hover table-bordered col-10" >
 
      <table class="table" >

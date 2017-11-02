@@ -1,3 +1,28 @@
+<?php
+function fetch_data()
+{
+    $output = '';
+    $conn = mysqli_connect("localhost", "root", "", "project");
+    $sql = "SELECT * FROM   symbols ORDER BY email";
+    $result = mysqli_query($conn, $sql);
+    while($row = mysqli_fetch_array($result))
+    {
+        $output .= '<tr>  
+<td>'.$row["id"].'</td>  
+<td>'.$row["name"].'</td>  
+<td>'.$row["title"].'</td>  
+<td>'.$row["email"].'</td>  
+<td>'.$row["year"].'</td>
+<td>'.$row["gender"].'</td>
+<td>'.$row["fromdate"].'</td>  
+<td>'.$row["todate"].'</td> 
+<td>'.$row["people"].'</td> 
+</tr>  
+';
+    }
+    return $output;
+}
+ ?>
 <?php include('header.php'); ?>
 
 <center>
@@ -60,10 +85,38 @@
 </form>
 </div>
 </div>
+<h3 style="padding: 20px;">Records In Database:</h3>
+<div class="table-responsive table-hover table-bordered col-10" >
+
+     <table class="table" >
+  <thead > 
+    <tr class="table-primary">
+                <th width="1%">Id</th>
+              
+                <th width="1%">Name</th>
+                <th width="1%">Event</th>
+                <th width="1%">Email</th>
+                <th width="1%">Year</th>
+                <th width="1%">Gender</th>
+                <th width="1%">From date</th>
+                <th width="1%">To date</th>
+                <th width="1%">No of people</th>
+            </tr>
+
+
+    <tbody>
+            <?php
+            echo fetch_data();
+            ?>
+        </tbody>
+    </table>
+        </thead>
+        </table>
+    </div>
+    </div>
 </center>
 
-   
-</center>
+
 <script>
         function myfunction(){
             alert("Data Updated And Submitted Succesfully");
