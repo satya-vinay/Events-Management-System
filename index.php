@@ -71,6 +71,7 @@ This type of legal agreement can be used for both your website and your mobile a
 
 
   <button class="btn btn-primary" type="submit"  value='submit' >Submit</button>
+  <button class="btn btn-warning" type="reset"  value='reset' >Reset</button>
 </form>
 </div>
 </div>
