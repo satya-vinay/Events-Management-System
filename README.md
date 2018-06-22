@@ -1,2 +1,3 @@
-# PBD-Project
-My University's Platform Based Development course small project Semester-5.
+# Event's Managment System
+This is Web-based prototype for my University Event's Managment System.
+
